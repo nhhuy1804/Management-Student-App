@@ -14,6 +14,10 @@
 		F68C7A5B1EC238DE00ADD0BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F68C7A591EC238DE00ADD0BC /* LaunchScreen.storyboard */; };
 		F68C7A661EC238DE00ADD0BC /* Management_StudentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C7A651EC238DE00ADD0BC /* Management_StudentTests.swift */; };
 		F68C7A711EC238DE00ADD0BC /* Management_StudentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C7A701EC238DE00ADD0BC /* Management_StudentUITests.swift */; };
+		F68C7A7F1EC23D9B00ADD0BC /* StudentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C7A7E1EC23D9B00ADD0BC /* StudentTableViewCell.swift */; };
+		F68C7A811EC23E1700ADD0BC /* ManagementStudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C7A801EC23E1700ADD0BC /* ManagementStudentTableViewController.swift */; };
+		F68C7A831EC2400000ADD0BC /* StudentDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C7A821EC2400000ADD0BC /* StudentDetailTableViewController.swift */; };
+		F68C7A851EC24A4100ADD0BC /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68C7A841EC24A4100ADD0BC /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		F68C7A6C1EC238DE00ADD0BC /* Management StudentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Management StudentUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F68C7A701EC238DE00ADD0BC /* Management_StudentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Management_StudentUITests.swift; sourceTree = "<group>"; };
 		F68C7A721EC238DE00ADD0BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F68C7A7E1EC23D9B00ADD0BC /* StudentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewCell.swift; sourceTree = "<group>"; };
+		F68C7A801EC23E1700ADD0BC /* ManagementStudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ManagementStudentTableViewController.swift; sourceTree = "<group>"; };
+		F68C7A821EC2400000ADD0BC /* StudentDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentDetailTableViewController.swift; sourceTree = "<group>"; };
+		F68C7A841EC24A4100ADD0BC /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +111,10 @@
 				F68C7A571EC238DE00ADD0BC /* Assets.xcassets */,
 				F68C7A591EC238DE00ADD0BC /* LaunchScreen.storyboard */,
 				F68C7A5C1EC238DE00ADD0BC /* Info.plist */,
+				F68C7A7E1EC23D9B00ADD0BC /* StudentTableViewCell.swift */,
+				F68C7A801EC23E1700ADD0BC /* ManagementStudentTableViewController.swift */,
+				F68C7A821EC2400000ADD0BC /* StudentDetailTableViewController.swift */,
+				F68C7A841EC24A4100ADD0BC /* Student.swift */,
 			);
 			path = "Management Student";
 			sourceTree = "<group>";
@@ -259,8 +271,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F68C7A831EC2400000ADD0BC /* StudentDetailTableViewController.swift in Sources */,
+				F68C7A851EC24A4100ADD0BC /* Student.swift in Sources */,
+				F68C7A811EC23E1700ADD0BC /* ManagementStudentTableViewController.swift in Sources */,
 				F68C7A531EC238DE00ADD0BC /* ViewController.swift in Sources */,
 				F68C7A511EC238DE00ADD0BC /* AppDelegate.swift in Sources */,
+				F68C7A7F1EC23D9B00ADD0BC /* StudentTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
