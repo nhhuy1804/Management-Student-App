@@ -26,7 +26,6 @@ class Student: NSObject {
     
     class func createStudent() -> [Student]{
         var students = [Student]()
-        
         students.append(Student(nam: "Ronaldo", uni: "Madrid", yold: "30", des: "Best player", imaged: #imageLiteral(resourceName: "h1")))
         students.append(Student(nam: "Donald Trumb", uni: "Havard", yold: "50", des: "President", imaged: #imageLiteral(resourceName: "h2")))
         students.append(Student(nam: "Logan", uni: "Empty", yold: "45", des: "X men", imaged: #imageLiteral(resourceName: "h3")))

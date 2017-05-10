@@ -18,7 +18,7 @@ class ManagementStudentTableViewController: UITableViewController, UISearchBarDe
         return Student.createStudent()
     }()
 
-    let searchBar = UISearchBar(frame: CGRect(x:0,y:0,width:(UIScreen.main.bounds.width),height:70))
+    let searchBar = UISearchBar(frame: CGRect(x:0,y:0,width:(UIScreen.main.bounds.width),height:90))
     
     func searchBarDes() {
         searchBar.showsScopeBar = true
@@ -35,7 +35,17 @@ class ManagementStudentTableViewController: UITableViewController, UISearchBarDe
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        tableView.reloadData()
+        if Constants.isReload {
+            let student: Student = Constants.student
+            students.append(student)
+            initialStudent = students
+            tableView.reloadData()
+            Constants.isReload = false
+        }
+        else{
+            tableView.reloadData()
+            initialStudent = students
+        }
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -84,7 +94,6 @@ class ManagementStudentTableViewController: UITableViewController, UISearchBarDe
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "StudentCell", for: indexPath) as! StudentTableViewCell
         let student = students[indexPath.row]
-        
         cell.lblName.text = student.name
         cell.lblUniversity.text = student.university
         cell.lblYearOld.text = student.yearold
